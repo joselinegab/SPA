@@ -17,6 +17,8 @@ export class HeroesComponent implements OnInit {
 
   verHeroe(idx:number){
 console.log(idx);
+
+
 this.router.navigate(['/heroe',idx])
   }
   ngOnInit(): void {

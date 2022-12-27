@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable({
   providedIn: 'root'
@@ -56,7 +57,8 @@ private heroes:Heroe[]=[
     aparicion: "1974-11-01",
     casa: "Marvel"
   }
-];;
+];messageService: any;
+;
 
 //DEVUELVE EL ARREGLO
 getHeroes(){
@@ -66,6 +68,7 @@ getHeroes(){
 getHeroe(idx:number){
 return this.heroes[idx];
 }
+
 
   constructor() {
     console.log("Servicio listo para usar..");
