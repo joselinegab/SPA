@@ -9,6 +9,10 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  buscarHeroe(param:string){
+    
+    console.log(param);
+  }
   ngOnInit(): void {
   }
 
